@@ -1,1 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for AutoTagPro - Professional Auto-Numbering, Tagging, and BOM Plugin for Autodesk® AutoCAD®">
+  <meta name="author" content="BoostWorkLab">
+  <title>Privacy Policy - AutoTagPro for Autodesk® AutoCAD®</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --card-inner: #1a2234;
+      --border-color: #1f293d;
+      --border-subtle: #2d3748;
+      --primary: #38bdf8;
+      --primary-hover: #0ea5e9;
+      --primary-glow: rgba(56, 189, 248, 0.12);
+      --accent: #6366f1;
+      --success: #10b981;
+      --text-main: #f8fafc;
+      --text-body: #cbd5e1;
+      --text-muted: #94a3b8;
+      --badge-bg: #0369a1;
+      --badge-text: #e0f2fe;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-color);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.07) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.05) 0px, transparent 50%);
+      color: var(--text-body);
+      line-height: 1.7;
+      padding: 48px 20px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 32px;
+      margin-bottom: 36px;
+    }
+
+    .badge-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, #0284c7, #0369a1);
+      color: var(--badge-text);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: 9999px;
+      box-shadow: 0 2px 8px rgba(3, 105, 161, 0.3);
+    }
+
+    .badge-secondary {
+      background: var(--card-inner);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 9999px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--text-main);
+      letter-spacing: -0.025em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.925rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .meta strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background: var(--primary-glow);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      color: #e2e8f0;
+      font-size: 0.975rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-top: 36px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.015em;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--primary);
+    }
+
+    p {
+      color: var(--text-body);
+      margin-bottom: 16px;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      color: var(--text-body);
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .grid-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .card {
+      background: var(--card-inner);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    .code-inline {
+      background-color: #090d16;
+      border: 1px solid var(--border-subtle);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+      color: #38bdf8;
+      font-size: 0.875em;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    footer p {
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px 12px;
+      }
+      .container {
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .grid-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="badge-wrapper">
+        <span class="badge">Legal & Compliance</span>
+        <span class="badge-secondary">Autodesk® App Store Verified</span>
+        <span class="badge-secondary">100% Offline / Local</span>
+      </div>
+      <h1>Publisher Privacy Policy</h1>
+      <div class="meta">
+        <span><strong>Application:</strong> AutoTagPro for Autodesk® AutoCAD®</span>
+        <span><strong>Publisher:</strong> BoostWorkLab</span>
+        <span><strong>Effective Date:</strong> August 2026</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="highlight-box">
+        <p><strong>Executive Summary:</strong> AutoTagPro operates 100% locally on your workstation inside Autodesk® AutoCAD®. We <strong>do not</strong> collect, inspect, transmit, or store your CAD drawings, geometries, annotations, metadata, or design files (<span class="code-inline">.dwg</span> / <span class="code-inline">.dxf</span>). We <strong>never</strong> track your personal data, employ telemetry or advertising SDKs, or sell your information.</
 
