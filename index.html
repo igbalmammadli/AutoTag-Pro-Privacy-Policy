@@ -270,8 +270,8 @@
     <header>
       <div class="badge-wrapper">
         <span class="badge">Legal & Compliance</span>
-        <span class="badge-secondary">Autodesk® App Store Verified</span>
-        <span class="badge-secondary">100% Offline / Local</span>
+        <span class="badge-secondary">Lemon Squeezy Merchant Verified</span>
+        <span class="badge-secondary">100% Local CAD Processing</span>
       </div>
       <h1>Publisher Privacy Policy</h1>
       <div class="meta">
@@ -283,7 +283,7 @@
 
     <main>
       <div class="highlight-box">
-        <p><strong>Executive Summary:</strong> AutoTagPro operates 100% locally on your workstation inside Autodesk® AutoCAD®. We <strong>do not</strong> collect, inspect, transmit, or store your CAD drawings, geometries, annotations, metadata, or design files (<span class="code-inline">.dwg</span> / <span class="code-inline">.dxf</span>). We <strong>never</strong> track your personal data, employ telemetry or advertising SDKs, or sell your information.</p>
+        <p><strong>Executive Summary:</strong> AutoTagPro operates locally on your workstation inside Autodesk® AutoCAD®. We <strong>do not</strong> collect, inspect, transmit, or store your CAD drawings, geometries, annotations, metadata, or design files (<span class="code-inline">.dwg</span> / <span class="code-inline">.dxf</span>). We <strong>never</strong> sell your personal data or share it with advertising networks.</p>
       </div>
 
       <div class="grid-cards">
@@ -292,50 +292,53 @@
           <p>All numbering, leader tags, and BOM tables are generated strictly within your local AutoCAD memory.</p>
         </div>
         <div class="card">
-          <div class="card-title">📁 Local Configuration</div>
-          <p>User preferences and sequence presets are saved exclusively in your local workstation directory.</p>
+          <div class="card-title">💳 Secure Payments</div>
+          <p>Purchases and licensing are processed by Lemon Squeezy (PCI-DSS Level 1 Compliant).</p>
         </div>
         <div class="card">
-          <div class="card-title">🛡️ Complete Data Privacy</div>
-          <p>No remote servers, no background trackers, and no third-party data analytics.</p>
+          <div class="card-title">📁 Local Configuration</div>
+          <p>User preferences and sequence presets are saved exclusively in your local workstation directory.</p>
         </div>
       </div>
 
       <h2>1. Information We Process & Operational Architecture</h2>
       <p>AutoTagPro adheres to strict data minimization and privacy-by-design principles. The application is an in-process plugin for Autodesk® AutoCAD® and operates under the following conditions:</p>
       <ul>
-        <li><strong>Zero CAD / Drawing Data Transmission:</strong> All auto-numbering, balloon tagging, multi-leader styling, BOM table generation, gap detection, sequence synchronization, and Excel (<span class="code-inline">.xlsx</span>) exports occur strictly on your local machine. Drawing entity metadata (such as item names, part numbers, capacities, models, and custom fields) is stored directly in the active AutoCAD drawing database (<span class="code-inline">.dwg</span>) using standard AutoCAD extension dictionaries / XData. No drawing content or proprietary design data is ever transmitted externally.</li>
-        <li><strong>Local User Preferences:</strong> Configuration settings (such as text size, bubble shapes, prefix formats, zero padding, layer names, and custom field labels) are stored exclusively on your local workstation at <span class="code-inline">%LOCALAPPDATA%\AutoTagPro\config.json</span>. This configuration is solely utilized by your local AutoCAD session and is never uploaded or shared.</li>
-        <li><strong>Excel / BOM Exports:</strong> When you execute the <span class="code-inline">ATAGBOMXLSX</span> command to export a Bill of Materials spreadsheet, the resulting <span class="code-inline">.xlsx</span> file is written directly and exclusively to the local or network file path you choose. AutoTagPro does not inspect, copy, or transmit exported files.</li>
-        <li><strong>No Telemetry or Tracking:</strong> AutoTagPro does not contain any analytics SDKs, tracking beacons, diagnostic uploaders, or background telemetry services. It does not monitor user behavior, keystrokes, or AutoCAD command invocation habits.</li>
-        <li><strong>No Network Communication:</strong> AutoTagPro is a completely self-contained offline tool. Normal plugin operations perform zero outbound network requests to any developer or third-party servers.</li>
+        <li><strong>Zero CAD / Drawing Data Transmission:</strong> All auto-numbering, balloon tagging, multi-leader styling, BOM table generation, gap detection, sequence synchronization, and Excel (<span class="code-inline">.xlsx</span>) exports occur strictly on your local computer. Drawing entity metadata (such as item names, part numbers, capacities, models, and custom fields) is stored directly inside the active drawing database (<span class="code-inline">.dwg</span>) using standard AutoCAD extension dictionaries / XData. No drawing content or proprietary design data is ever transmitted externally.</li>
+        <li><strong>Payment & Order Processing (Lemon Squeezy):</strong> All orders, payment transactions, invoicing, and tax/VAT calculations are securely managed by our merchant of record, <strong>Lemon Squeezy</strong>. BoostWorkLab never collects, sees, or stores your credit card, debit card, or payment credentials.</li>
+        <li><strong>License Activation & Seat Validation:</strong> When activating or verifying a license key, the application communicates securely over HTTPS with our license management API via Lemon Squeezy. It transmits only your license key and an anonymized hardware identifier hash (generated locally) to enforce single-user or multi-seat license activation limits.</li>
+        <li><strong>Local User Preferences:</strong> Configuration settings (such as text size, bubble shapes, prefix formats, zero padding, layer names, and custom field labels) are stored exclusively on your local workstation at <span class="code-inline">%LOCALAPPDATA%\AutoTagPro\config.json</span>. This configuration is solely utilized by your local AutoCAD session and is never uploaded.</li>
+        <li><strong>Excel / BOM Exports:</strong> When you execute the <span class="code-inline">ATAGBOMXLSX</span> command to export a Bill of Materials spreadsheet, the resulting <span class="code-inline">.xlsx</span> file is written directly and exclusively to the local or network file path you specify. AutoTagPro does not inspect, copy, or transmit exported files.</li>
+        <li><strong>Zero Tracking SDKs:</strong> AutoTagPro does not contain any behavioral analytics SDKs, advertising beacons, diagnostic trackers, or keystroke monitors.</li>
       </ul>
 
       <h2>2. Third-Party Services & Data Sharing</h2>
-      <p>We do not sell, rent, trade, or transfer any user data to third parties, advertising networks, or data brokers.</p>
+      <p>We do not sell, rent, trade, or share your information with third-party advertising networks, data brokers, or analytics providers. We only interface with trusted operational service providers necessary for billing and distribution:</p>
       <ul>
-        <li><strong>Autodesk® App Store:</strong> If purchased or downloaded via the Autodesk App Store, standard distribution, payment processing, and account management are governed by Autodesk's Terms of Service and Privacy Statement. BoostWorkLab does not store your payment card details.</li>
-        <li><strong>GitHub:</strong> Project documentation, issue tracking, and release notes are hosted on GitHub. Interacting with public repositories or opening issue tickets is subject to GitHub's Privacy Statement.</li>
+        <li><strong>Lemon Squeezy:</strong> Merchant of record handling order processing, PCI-DSS compliant payment processing, and license seat management with enterprise-grade encryption. (<a href="https://www.lemonsqueezy.com/privacy" target="_blank" rel="noopener noreferrer">Lemon Squeezy Privacy Policy</a>)</li>
+        <li><strong>Autodesk® App Store:</strong> If downloaded via the Autodesk App Store, standard distribution and account access are governed by Autodesk's Terms of Service and Privacy Statement.</li>
+        <li><strong>GitHub:</strong> Hosts public documentation, setup releases, and issue trackers over secure HTTPS.</li>
       </ul>
 
       <h2>3. Data Retention & Deletion</h2>
-      <p>Because AutoTagPro does not collect or store your personal data on external servers, retention is fully under your control:</p>
       <ul>
-        <li><strong>Local Configuration Removal:</strong> You can purge all local plugin settings at any time by deleting the folder <span class="code-inline">%LOCALAPPDATA%\AutoTagPro</span>.</li>
-        <li><strong>Drawing Metadata:</strong> Tag data and metadata embedded within CAD files remain entirely within your <span class="code-inline">.dwg</span> files and can be modified or cleared using the built-in <span class="code-inline">ATAGCLEAR</span> command or standard AutoCAD commands.</li>
+        <li><strong>Licensing Data:</strong> License activation records and anonymized hardware associations are retained in Lemon Squeezy solely for the duration of your active license/subscription or as required for ongoing support and tax compliance.</li>
+        <li><strong>Local Storage Removal:</strong> You can purge all local plugin settings at any time by deleting the folder <span class="code-inline">%LOCALAPPDATA%\AutoTagPro</span>.</li>
+        <li><strong>Drawing Metadata:</strong> Tag data and metadata embedded within CAD files remain entirely within your <span class="code-inline">.dwg</span> files and can be modified or cleared using the built-in <span class="code-inline">ATAGCLEAR</span> command.</li>
         <li><strong>Uninstallation:</strong> Uninstalling AutoTagPro via Windows Control Panel / Add-Remove Programs completely removes the application binaries and add-in manifest from your computer.</li>
       </ul>
 
       <h2>4. User Rights & Legal Compliance (GDPR & CCPA/CPRA)</h2>
       <p>AutoTagPro complies fully with international privacy regulations, including the European General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA).</p>
-      <p>Because we do not collect or maintain a database of personal data or telemetry from plugin users, no user profiles exist to access, sell, or disclose. You retain 100% ownership and sovereignty over your engineering drawings and files.</p>
+      <p>Under these laws, you have the right to request access to, correction of, or deletion of any licensing records associated with your email address, as well as revoke consent. Because we do not collect or maintain a database of your drawings, geometries, or personal telemetry, you retain 100% ownership and sovereignty over your CAD files.</p>
 
       <h2>5. Contact Information & Support</h2>
-      <p>If you have any questions, suggestions, or privacy-related inquiries regarding AutoTagPro or this policy, please reach out to us:</p>
+      <p>If you have any questions, license inquiries, or privacy requests regarding AutoTagPro or this policy, please reach out to us:</p>
       <ul>
         <li><strong>Developer / Publisher:</strong> BoostWorkLab</li>
         <li><strong>Lead Developer:</strong> Igbal Mammadli</li>
-        <li><strong>GitHub Issues / Inquiries:</strong> <a href="https://github.com/igbalmammadli" target="_blank" rel="noopener noreferrer">github.com/igbalmammadli</a></li>
+        <li><strong>Merchant of Record & Billing:</strong> Lemon Squeezy (support@lemonsqueezy.com)</li>
+        <li><strong>GitHub Issues & Inquiries:</strong> <a href="https://github.com/igbalmammadli" target="_blank" rel="noopener noreferrer">github.com/igbalmammadli</a></li>
         <li><strong>Privacy Policy URL:</strong> <a href="https://igbalmammadli.github.io/privacy/" target="_blank" rel="noopener noreferrer">https://igbalmammadli.github.io/privacy/</a></li>
       </ul>
     </main>
