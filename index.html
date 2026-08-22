@@ -283,5 +283,68 @@
 
     <main>
       <div class="highlight-box">
-        <p><strong>Executive Summary:</strong> AutoTagPro operates 100% locally on your workstation inside Autodesk® AutoCAD®. We <strong>do not</strong> collect, inspect, transmit, or store your CAD drawings, geometries, annotations, metadata, or design files (<span class="code-inline">.dwg</span> / <span class="code-inline">.dxf</span>). We <strong>never</strong> track your personal data, employ telemetry or advertising SDKs, or sell your information.</
+        <p><strong>Executive Summary:</strong> AutoTagPro operates 100% locally on your workstation inside Autodesk® AutoCAD®. We <strong>do not</strong> collect, inspect, transmit, or store your CAD drawings, geometries, annotations, metadata, or design files (<span class="code-inline">.dwg</span> / <span class="code-inline">.dxf</span>). We <strong>never</strong> track your personal data, employ telemetry or advertising SDKs, or sell your information.</p>
+      </div>
 
+      <div class="grid-cards">
+        <div class="card">
+          <div class="card-title">🔒 Zero CAD Telemetry</div>
+          <p>All numbering, leader tags, and BOM tables are generated strictly within your local AutoCAD memory.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">📁 Local Configuration</div>
+          <p>User preferences and sequence presets are saved exclusively in your local workstation directory.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">🛡️ Complete Data Privacy</div>
+          <p>No remote servers, no background trackers, and no third-party data analytics.</p>
+        </div>
+      </div>
+
+      <h2>1. Information We Process & Operational Architecture</h2>
+      <p>AutoTagPro adheres to strict data minimization and privacy-by-design principles. The application is an in-process plugin for Autodesk® AutoCAD® and operates under the following conditions:</p>
+      <ul>
+        <li><strong>Zero CAD / Drawing Data Transmission:</strong> All auto-numbering, balloon tagging, multi-leader styling, BOM table generation, gap detection, sequence synchronization, and Excel (<span class="code-inline">.xlsx</span>) exports occur strictly on your local machine. Drawing entity metadata (such as item names, part numbers, capacities, models, and custom fields) is stored directly in the active AutoCAD drawing database (<span class="code-inline">.dwg</span>) using standard AutoCAD extension dictionaries / XData. No drawing content or proprietary design data is ever transmitted externally.</li>
+        <li><strong>Local User Preferences:</strong> Configuration settings (such as text size, bubble shapes, prefix formats, zero padding, layer names, and custom field labels) are stored exclusively on your local workstation at <span class="code-inline">%LOCALAPPDATA%\AutoTagPro\config.json</span>. This configuration is solely utilized by your local AutoCAD session and is never uploaded or shared.</li>
+        <li><strong>Excel / BOM Exports:</strong> When you execute the <span class="code-inline">ATAGBOMXLSX</span> command to export a Bill of Materials spreadsheet, the resulting <span class="code-inline">.xlsx</span> file is written directly and exclusively to the local or network file path you choose. AutoTagPro does not inspect, copy, or transmit exported files.</li>
+        <li><strong>No Telemetry or Tracking:</strong> AutoTagPro does not contain any analytics SDKs, tracking beacons, diagnostic uploaders, or background telemetry services. It does not monitor user behavior, keystrokes, or AutoCAD command invocation habits.</li>
+        <li><strong>No Network Communication:</strong> AutoTagPro is a completely self-contained offline tool. Normal plugin operations perform zero outbound network requests to any developer or third-party servers.</li>
+      </ul>
+
+      <h2>2. Third-Party Services & Data Sharing</h2>
+      <p>We do not sell, rent, trade, or transfer any user data to third parties, advertising networks, or data brokers.</p>
+      <ul>
+        <li><strong>Autodesk® App Store:</strong> If purchased or downloaded via the Autodesk App Store, standard distribution, payment processing, and account management are governed by Autodesk's Terms of Service and Privacy Statement. BoostWorkLab does not store your payment card details.</li>
+        <li><strong>GitHub:</strong> Project documentation, issue tracking, and release notes are hosted on GitHub. Interacting with public repositories or opening issue tickets is subject to GitHub's Privacy Statement.</li>
+      </ul>
+
+      <h2>3. Data Retention & Deletion</h2>
+      <p>Because AutoTagPro does not collect or store your personal data on external servers, retention is fully under your control:</p>
+      <ul>
+        <li><strong>Local Configuration Removal:</strong> You can purge all local plugin settings at any time by deleting the folder <span class="code-inline">%LOCALAPPDATA%\AutoTagPro</span>.</li>
+        <li><strong>Drawing Metadata:</strong> Tag data and metadata embedded within CAD files remain entirely within your <span class="code-inline">.dwg</span> files and can be modified or cleared using the built-in <span class="code-inline">ATAGCLEAR</span> command or standard AutoCAD commands.</li>
+        <li><strong>Uninstallation:</strong> Uninstalling AutoTagPro via Windows Control Panel / Add-Remove Programs completely removes the application binaries and add-in manifest from your computer.</li>
+      </ul>
+
+      <h2>4. User Rights & Legal Compliance (GDPR & CCPA/CPRA)</h2>
+      <p>AutoTagPro complies fully with international privacy regulations, including the European General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA/CPRA).</p>
+      <p>Because we do not collect or maintain a database of personal data or telemetry from plugin users, no user profiles exist to access, sell, or disclose. You retain 100% ownership and sovereignty over your engineering drawings and files.</p>
+
+      <h2>5. Contact Information & Support</h2>
+      <p>If you have any questions, suggestions, or privacy-related inquiries regarding AutoTagPro or this policy, please reach out to us:</p>
+      <ul>
+        <li><strong>Developer / Publisher:</strong> BoostWorkLab</li>
+        <li><strong>Lead Developer:</strong> Igbal Mammadli</li>
+        <li><strong>GitHub Issues / Inquiries:</strong> <a href="https://github.com/igbalmammadli" target="_blank" rel="noopener noreferrer">github.com/igbalmammadli</a></li>
+        <li><strong>Privacy Policy URL:</strong> <a href="https://igbalmammadli.github.io/privacy/" target="_blank" rel="noopener noreferrer">https://igbalmammadli.github.io/privacy/</a></li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 BoostWorkLab. All rights reserved.</p>
+      <p>Autodesk, AutoCAD, and the Autodesk logo are registered trademarks of Autodesk, Inc. in the USA and/or other countries. AutoTagPro is an independent add-in and is not officially affiliated with Autodesk, Inc.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
